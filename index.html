@@ -234,6 +234,7 @@
         <div class="top-buttons">
             <button onclick="clearData()">Effacer</button>
             <button onclick="showReport()">Rapport</button>
+            <button onclick="navigateToPage()">Distro</button>
         </div>
         <h1>Calcul de la Rendement de l'Équipe</h1>
 
@@ -305,6 +306,9 @@
 
     <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
     <script>
+        function navigateToPage() {
+      window.location.href = 'https://abdermb98.github.io/DISTREO/'; // استبدل هذا بالرابط الخاص بك
+    }
         // Définir l'heure actuelle comme valeur par défaut pour le champ Heure de sortie
         window.onload = function() {
             var now = new Date();
