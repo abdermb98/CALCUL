@@ -25,6 +25,7 @@
             box-sizing: border-box;
             margin: 10px;
             position: relative; /* For positioning buttons */
+            
         }
 
         h1 {
@@ -237,7 +238,7 @@
             <button onclick="showReport()">Rapport</button>
             <button onclick="navigateToPage()">Distro</button>
         </div>
-        <h1>Calcul de la Rendement de l'Équipe</h1>
+        <h1>Rendement d'Équipes</h1>
 
         <div class="group-name-container">
             <label for="groupName">Equipe :</label>
@@ -504,10 +505,10 @@
                 var difference = performance - objectif;
                 var percentageDifference = (difference / objectif) * 100;
 
-                reportContent += `Groupe: ${groupName}\n`;
-                reportContent += `Performance: ${performance.toFixed(2)}\n`;
-                reportContent += `Objectif: ${objectif.toFixed(2)}\n`;
-                reportContent += `Différence: ${difference.toFixed(2)} (${percentageDifference.toFixed(2)}%)\n\n`;
+                reportContent += `EQUIPE: ${groupName}\n`;
+                reportContent += `RENDEMENT: ${performance.toFixed(2)} KG/H\n`;
+                reportContent += `Objectif: ${objectif.toFixed(2)} KG/H\n`;
+                reportContent += `Différence: ${difference.toFixed(2)}KG/H (${percentageDifference.toFixed(2)}%)\n\n`;
             }
 
             reportText.value = reportContent;
